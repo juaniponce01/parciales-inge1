@@ -1,0 +1,643 @@
+
+
+----STARTUP---- (19 November 2023 19:01:28) as /Users/juaniponce/Desktop/DocsJuan/Ingenieria de Software I/2do Parcial/2023-1c/CuisUniversity-5981.image!
+
+
+Object subclass: #DrivingAssistant
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-AutomaticCar'!
+
+!classDefinition: #DrivingAssistant category: 'ISW1-AutomaticCar' stamp: 'JP 11/19/2023 19:04:21'!
+Object subclass: #DrivingAssistant
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-AutomaticCar'!
+
+TestCase subclass: #DrivingAssistantTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-AutomaticCar'!
+
+!classDefinition: #DrivingAssistantTest category: 'ISW1-AutomaticCar' stamp: 'JP 11/19/2023 19:05:23'!
+TestCase subclass: #DrivingAssistantTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-AutomaticCar'!
+
+----End fileIn of /Users/juaniponce/Downloads/Solucion 2/MarsRover-ActiveVariable.st----!
+
+----SNAPSHOT----(19 November 2023 23:39:44) CuisUniversity-5981.image priorSource: 10197292!
+
+----STARTUP---- (20 November 2023 09:47:20) as /Users/juaniponce/Desktop/DocsJuan/Ingenieria de Software I/2do Parcial/2023-1c/CuisUniversity-5981.image!
+
+!DrivingAssistantTest methodsFor: 'no messages' stamp: 'JP 11/20/2023 09:49:56'!
+test01
+
+	| drivingAssistant |
+	drivingAssistant := DrivingAssistant new.
+	
+	! !
+!DrivingAssistantTest methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 09:52:27' prior: 50332619!
+test01
+
+	| drivingAssistant |
+	drivingAssistant := DrivingAssistant new.
+	
+	drivingAssistant turnOn.
+	
+	self assert: drivingAssistant velocity = (0 * kilometer/hour).
+	
+	! !
+
+!testRun: #DrivingAssistantTest #test01 stamp: 'JP 11/20/2023 09:52:30'!
+ERROR!
+!DrivingAssistant methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 09:52:43'!
+turnOn
+	self shouldBeImplemented.! !
+!DrivingAssistant methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 09:53:07' prior: 50332636!
+turnOn
+	
+	| velocity |
+	velocity := 0 * kilometer/hour.! !
+
+!classDefinition: #DrivingAssistant category: 'ISW1-AutomaticCar' stamp: 'JP 11/20/2023 09:53:55'!
+Object subclass: #DrivingAssistant
+	instanceVariableNames: 'velocity2'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-AutomaticCar'!
+!DrivingAssistant methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 09:53:53' prior: 50332641!
+turnOn
+	
+	
+	velocity2 := 0 * kilometer/hour.! !
+
+!classDefinition: #DrivingAssistant category: 'ISW1-AutomaticCar' stamp: 'JP 11/20/2023 09:53:59'!
+Object subclass: #DrivingAssistant
+	instanceVariableNames: 'velocity'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-AutomaticCar'!
+!DrivingAssistant methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 09:53:59' prior: 50332654!
+turnOn
+	
+	
+	velocity := 0 * kilometer/hour.! !
+!DrivingAssistant methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 09:54:02' prior: 50332667!
+turnOn
+	
+	velocity := 0 * kilometer/hour.! !
+
+!testRun: #DrivingAssistantTest #test01 stamp: 'JP 11/20/2023 09:54:06'!
+ERROR!
+
+!testRun: #DrivingAssistantTest #test01 stamp: 'JP 11/20/2023 09:54:06'!
+ERROR!
+!DrivingAssistant methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 09:54:12'!
+velocity
+	self shouldBeImplemented.
+	^velocity! !
+!DrivingAssistant methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 09:54:16' prior: 50332682!
+velocity
+	
+	^ velocity! !
+
+!testRun: #DrivingAssistantTest #test01 stamp: 'JP 11/20/2023 09:54:19'!
+PASSED!
+
+!testRun: #DrivingAssistantTest #test01 stamp: 'JP 11/20/2023 09:54:21'!
+PASSED!
+
+!testRun: #DrivingAssistantTest #test01 stamp: 'JP 11/20/2023 09:54:21'!
+PASSED!
+!DrivingAssistantTest methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 09:54:57'!
+test02
+
+	| drivingAssistant |
+	drivingAssistant := DrivingAssistant new.
+	
+	drivingAssistant turnOn.
+	
+	self assert: drivingAssistant proximityBeep isTurnedOff.
+	
+	! !
+
+!testRun: #DrivingAssistantTest #test02 stamp: 'JP 11/20/2023 09:54:59'!
+ERROR!
+!DrivingAssistant methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 09:55:05'!
+proximityBeep
+	self shouldBeImplemented.! !
+
+!classDefinition: #DrivingAssistant category: 'ISW1-AutomaticCar' stamp: 'JP 11/20/2023 09:55:17'!
+Object subclass: #DrivingAssistant
+	instanceVariableNames: 'velocity proximityBeep'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-AutomaticCar'!
+!DrivingAssistant methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 09:55:15' prior: 50332710!
+proximityBeep
+	
+	^ proximityBeep! !
+
+!testRun: #DrivingAssistantTest #test02 stamp: 'JP 11/20/2023 09:55:21'!
+ERROR!
+!DrivingAssistant methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 09:55:50' prior: 50332672!
+turnOn
+	
+	velocity := 0 * kilometer/hour.
+	proximityBeep := false.! !
+
+!testRun: #DrivingAssistantTest #test01 stamp: 'JP 11/20/2023 09:55:55'!
+PASSED!
+
+!testRun: #DrivingAssistantTest #test02 stamp: 'JP 11/20/2023 09:55:55'!
+ERROR!
+
+!testRun: #DrivingAssistantTest #test02 stamp: 'JP 11/20/2023 09:55:55'!
+ERROR!
+!DrivingAssistantTest methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 09:58:11' prior: 50332699!
+test02
+
+	| drivingAssistant |
+	drivingAssistant := DrivingAssistant new.
+	
+	drivingAssistant turnOn.
+	
+	self assert: drivingAssistant proximityBeepIsTurnedOff.
+	
+	! !
+
+!testRun: #DrivingAssistantTest #test02 stamp: 'JP 11/20/2023 09:58:13'!
+ERROR!
+!DrivingAssistant methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 09:58:18'!
+proximityBeepIsTurnedOff
+	self shouldBeImplemented.! !
+!DrivingAssistant methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 09:58:44' prior: 50332755!
+proximityBeepIsTurnedOff
+	
+	^ proximityBeep = #TurnedOff! !
+
+!testRun: #DrivingAssistantTest #test02 stamp: 'JP 11/20/2023 09:58:46'!
+FAILURE!
+
+!methodRemoval: DrivingAssistant #proximityBeep stamp: 'JP 11/20/2023 09:58:54'!
+proximityBeep
+	
+	^ proximityBeep!
+!DrivingAssistant methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 09:59:03' prior: 50332730!
+turnOn
+	
+	velocity := 0 * kilometer/hour.
+	proximityBeep := #TurnedOff.! !
+
+!testRun: #DrivingAssistantTest #test01 stamp: 'JP 11/20/2023 09:59:05'!
+PASSED!
+
+!testRun: #DrivingAssistantTest #test02 stamp: 'JP 11/20/2023 09:59:05'!
+PASSED!
+
+!classDefinition: #DrivingAssistant category: 'ISW1-AutomaticCar' stamp: 'JP 11/20/2023 09:59:30'!
+Object subclass: #DrivingAssistant
+	instanceVariableNames: 'velocitySensor proximityBeep'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-AutomaticCar'!
+!DrivingAssistant methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 09:59:30' prior: 50332772!
+turnOn
+	
+	velocitySensor := 0 * kilometer/hour.
+	proximityBeep := #TurnedOff.! !
+!DrivingAssistant methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 09:59:30' prior: 50332687!
+velocity
+	
+	^ velocitySensor! !
+!DrivingAssistant methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 10:00:00'!
+currentVelocity
+	
+	^ velocitySensor! !
+!DrivingAssistantTest methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 10:00:00' prior: 50332625!
+test01
+
+	| drivingAssistant |
+	drivingAssistant := DrivingAssistant new.
+	
+	drivingAssistant turnOn.
+	
+	self assert: drivingAssistant currentVelocity = (0 * kilometer/hour).
+	
+	! !
+
+!methodRemoval: DrivingAssistant #velocity stamp: 'JP 11/20/2023 10:00:00'!
+velocity
+	
+	^ velocitySensor!
+
+!testRun: #DrivingAssistantTest #test02 stamp: 'JP 11/20/2023 10:00:11'!
+PASSED!
+
+!testRun: #DrivingAssistantTest #test01 stamp: 'JP 11/20/2023 10:00:11'!
+PASSED!
+
+!testRun: #DrivingAssistantTest #test02 stamp: 'JP 11/20/2023 10:00:11'!
+PASSED!
+!DrivingAssistantTest methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 10:02:12'!
+test03
+
+	| drivingAssistant |
+	drivingAssistant := DrivingAssistant new.
+	
+	drivingAssistant turnOn.
+	
+	self assert: drivingAssistant acceleratorIsConnected.
+	
+	! !
+!DrivingAssistantTest methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 10:03:40' prior: 50332826!
+test03
+
+	| drivingAssistant |
+	drivingAssistant := DrivingAssistant new.
+	
+	drivingAssistant turnOn.
+	
+	self assert: drivingAssistant throttleIsConnected.
+	
+	! !
+
+!testRun: #DrivingAssistantTest #test03 stamp: 'JP 11/20/2023 10:03:44'!
+ERROR!
+!DrivingAssistant methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 10:03:48'!
+throttleIsConnected
+	self shouldBeImplemented.! !
+!DrivingAssistant methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 10:03:57' prior: 50332846!
+throttleIsConnected
+	
+	^ true! !
+
+!testRun: #DrivingAssistantTest #test03 stamp: 'JP 11/20/2023 10:04:00'!
+PASSED!
+
+!testRun: #DrivingAssistantTest #test01 stamp: 'JP 11/20/2023 10:04:00'!
+PASSED!
+
+!testRun: #DrivingAssistantTest #test02 stamp: 'JP 11/20/2023 10:04:00'!
+PASSED!
+
+!testRun: #DrivingAssistantTest #test03 stamp: 'JP 11/20/2023 10:04:00'!
+PASSED!
+!DrivingAssistantTest methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 10:05:22'!
+test04
+
+	| drivingAssistant |
+	drivingAssistant := DrivingAssistant new.
+	
+	drivingAssistant turnOn.
+	
+	self deny: drivingAssistant isApplyingBreaks.
+	
+	! !
+
+!testRun: #DrivingAssistantTest #test04 stamp: 'JP 11/20/2023 10:05:24'!
+ERROR!
+!DrivingAssistant methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 10:05:29'!
+isApplyingBreaks
+	self shouldBeImplemented.! !
+!DrivingAssistant methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 10:05:34' prior: 50332877!
+isApplyingBreaks
+	
+	^ false! !
+
+!testRun: #DrivingAssistantTest #test04 stamp: 'JP 11/20/2023 10:05:36'!
+PASSED!
+
+!testRun: #DrivingAssistantTest #test01 stamp: 'JP 11/20/2023 10:05:36'!
+PASSED!
+
+!testRun: #DrivingAssistantTest #test02 stamp: 'JP 11/20/2023 10:05:36'!
+PASSED!
+
+!testRun: #DrivingAssistantTest #test03 stamp: 'JP 11/20/2023 10:05:36'!
+PASSED!
+
+!testRun: #DrivingAssistantTest #test04 stamp: 'JP 11/20/2023 10:05:36'!
+PASSED!
+!DrivingAssistantTest methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 10:06:02' prior: 50332806!
+test01
+
+	| drivingAssistant |
+	drivingAssistant := DrivingAssistant new.
+	
+	drivingAssistant turnOn.
+	
+	self assert: drivingAssistant currentVelocity = (0 * kilometer/hour).
+	
+	self deny: drivingAssistant isApplyingBreaks.
+	
+	! !
+!DrivingAssistantTest methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 10:06:16' prior: 50332900!
+test01
+
+	| drivingAssistant |
+	drivingAssistant := DrivingAssistant new.
+	
+	drivingAssistant turnOn.
+	
+	self assert: drivingAssistant currentVelocity = (0 * kilometer/hour).
+	self assert: drivingAssistant proximityBeepIsTurnedOff.
+	self deny: drivingAssistant isApplyingBreaks.
+	
+	! !
+!DrivingAssistantTest methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 10:06:26' prior: 50332911!
+test01
+
+	| drivingAssistant |
+	drivingAssistant := DrivingAssistant new.
+	
+	drivingAssistant turnOn.
+	
+	self assert: drivingAssistant currentVelocity = (0 * kilometer/hour).
+	self assert: drivingAssistant proximityBeepIsTurnedOff.
+	self assert: drivingAssistant throttleIsConnected.
+	self deny: drivingAssistant isApplyingBreaks.
+	
+	! !
+
+!methodRemoval: DrivingAssistantTest #test02 stamp: 'JP 11/20/2023 10:06:36'!
+test02
+
+	| drivingAssistant |
+	drivingAssistant := DrivingAssistant new.
+	
+	drivingAssistant turnOn.
+	
+	self assert: drivingAssistant proximityBeepIsTurnedOff.
+	
+	!
+
+!methodRemoval: DrivingAssistantTest #test03 stamp: 'JP 11/20/2023 10:06:40'!
+test03
+
+	| drivingAssistant |
+	drivingAssistant := DrivingAssistant new.
+	
+	drivingAssistant turnOn.
+	
+	self assert: drivingAssistant throttleIsConnected.
+	
+	!
+
+!methodRemoval: DrivingAssistantTest #test04 stamp: 'JP 11/20/2023 10:06:42'!
+test04
+
+	| drivingAssistant |
+	drivingAssistant := DrivingAssistant new.
+	
+	drivingAssistant turnOn.
+	
+	self deny: drivingAssistant isApplyingBreaks.
+	
+	!
+
+!testRun: #DrivingAssistantTest #test01 stamp: 'JP 11/20/2023 10:06:44'!
+PASSED!
+
+!testRun: #DrivingAssistantTest #test01 stamp: 'JP 11/20/2023 10:06:44'!
+PASSED!
+!DrivingAssistantTest methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 10:14:40'!
+test02
+
+	| drivingAssistant |
+	drivingAssistant := DrivingAssistant on: #Manual.
+	
+	drivingAssistant turnOn.
+	
+	self assert: drivingAssistant objectiveVelocity = 0.
+	
+	! !
+
+!testRun: #DrivingAssistantTest #test02 stamp: 'JP 11/20/2023 10:14:43'!
+ERROR!
+!DrivingAssistant class methodsFor: 'instance creation' stamp: 'JP 11/20/2023 10:14:48'!
+on: aRenameMe1 
+	"DO NOT FORGET TO RENAME COLLABORATORS AND REMOVE THIS COMMENT!!!!"
+	self shouldBeImplemented.
+	^self new initializeOn: aRenameMe1 ! !
+!DrivingAssistant class methodsFor: 'instance creation' stamp: 'JP 11/20/2023 10:15:22' prior: 50332976!
+on: aModeToBehave 
+	
+	^self new initializeOn: aModeToBehave ! !
+
+!testRun: #DrivingAssistantTest #test02 stamp: 'JP 11/20/2023 10:15:24'!
+ERROR!
+
+!classDefinition: #DrivingAssistant category: 'ISW1-AutomaticCar' stamp: 'JP 11/20/2023 10:15:31'!
+Object subclass: #DrivingAssistant
+	instanceVariableNames: 'velocitySensor proximityBeep modeToBehave'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-AutomaticCar'!
+!DrivingAssistant methodsFor: 'initialization' stamp: 'JP 11/20/2023 10:15:31'!
+initializeOn: aModeToBehave 
+	self shouldBeImplemented.
+	modeToBehave := aModeToBehave.! !
+
+!classDefinition: #DrivingAssistant category: 'ISW1-AutomaticCar' stamp: 'JP 11/20/2023 10:16:07'!
+Object subclass: #DrivingAssistant
+	instanceVariableNames: 'velocitySensor proximityBeep modeToBehave drivingMode'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-AutomaticCar'!
+!DrivingAssistant methodsFor: 'initialization' stamp: 'JP 11/20/2023 10:16:05' prior: 50333001!
+initializeOn: aDrivingModeToBehave 
+	
+	drivingMode := aDrivingModeToBehave.! !
+
+!testRun: #DrivingAssistantTest #test02 stamp: 'JP 11/20/2023 10:16:08'!
+ERROR!
+!DrivingAssistant methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 10:16:15'!
+objectiveVelocity
+	self shouldBeImplemented.! !
+!DrivingAssistant methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 10:16:20' prior: 50333024!
+objectiveVelocity
+	
+	^0! !
+!DrivingAssistantTest methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 10:16:24' prior: 50332965!
+test02
+
+	| drivingAssistant |
+	drivingAssistant := DrivingAssistant on: #Manual.
+	
+	drivingAssistant turnOn.
+	
+	self assert: drivingAssistant objectiveVelocity = 0.
+	
+	! !
+
+!testRun: #DrivingAssistantTest #test02 stamp: 'JP 11/20/2023 10:16:25'!
+PASSED!
+
+!testRun: #DrivingAssistantTest #test01 stamp: 'JP 11/20/2023 10:16:25'!
+PASSED!
+
+!testRun: #DrivingAssistantTest #test02 stamp: 'JP 11/20/2023 10:16:25'!
+PASSED!
+
+!testRun: #DrivingAssistantTest #test02 stamp: 'JP 11/20/2023 15:19:45'!
+PASSED!
+
+!testRun: #DrivingAssistantTest #test01 stamp: 'JP 11/20/2023 15:19:45'!
+PASSED!
+
+!testRun: #DrivingAssistantTest #test02 stamp: 'JP 11/20/2023 15:19:45'!
+PASSED!
+
+!classDefinition: #DrivingAssistant category: 'ISW1-AutomaticCar' stamp: 'JP 11/20/2023 15:24:37'!
+Object subclass: #DrivingAssistant
+	instanceVariableNames: 'velocitySensor proximityBeep drivingMode'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-AutomaticCar'!
+
+Object subclass: #SensorSystem
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-AutomaticCar'!
+
+!classDefinition: #SensorSystem category: 'ISW1-AutomaticCar' stamp: 'JP 11/20/2023 15:24:58'!
+Object subclass: #SensorSystem
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-AutomaticCar'!
+
+TestCase subclass: #SensorSystem
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-AutomaticCar'!
+
+!classDefinition: #SensorSystem category: 'ISW1-AutomaticCar' stamp: 'JP 11/20/2023 15:25:04'!
+TestCase subclass: #SensorSystem
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-AutomaticCar'!
+
+TestCase subclass: #SensorSystemTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-AutomaticCar'!
+
+!classDefinition: #SensorSystemTest category: 'ISW1-AutomaticCar' stamp: 'JP 11/20/2023 15:25:09'!
+TestCase subclass: #SensorSystemTest
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-AutomaticCar'!
+
+Object subclass: #SensorSystem
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-AutomaticCar'!
+
+!classDefinition: #SensorSystem category: 'ISW1-AutomaticCar' stamp: 'JP 11/20/2023 15:25:18'!
+Object subclass: #SensorSystem
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-AutomaticCar'!
+!SensorSystemTest methodsFor: 'no messages' stamp: 'JP 11/20/2023 15:30:40'!
+test01
+
+	| aStreamOfVelocities sensorSystem |
+	sensorSystem := SensorSystem withVelocities: aStreamOfVelocities.
+	
+	! !
+!SensorSystemTest methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 15:31:20' prior: 50333113!
+test01
+
+	| aStreamOfVelocities sensorSystem |
+	aStreamOfVelocities := ReadStream on: {100*kilometer/hour. 110*kilometer/hour}.
+	sensorSystem := SensorSystem withVelocities: aStreamOfVelocities.
+	
+	! !
+!SensorSystemTest methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 15:41:10' prior: 50333120!
+test01
+
+	| aStreamOfVelocities sensorSystem |
+	aStreamOfVelocities := ReadStream on: {100*kilometer/hour. 110*kilometer/hour}.
+	sensorSystem := SensorSystem withVelocities: aStreamOfVelocities.
+	
+	self assert: sensorSystem currentVelocity = (0 * kilometer/hour).
+	
+	! !
+
+!testRun: #SensorSystemTest #test01 stamp: 'JP 11/20/2023 15:41:12'!
+ERROR!
+!SensorSystem class methodsFor: 'instance creation' stamp: 'JP 11/20/2023 15:41:17'!
+withVelocities: aStreamOfVelocities 
+	"DO NOT FORGET TO RENAME COLLABORATORS AND REMOVE THIS COMMENT!!!!"
+	self shouldBeImplemented.
+	^self new initializeWithVelocities: aStreamOfVelocities ! !
+!SensorSystem class methodsFor: 'instance creation' stamp: 'JP 11/20/2023 15:41:22' prior: 50333144!
+withVelocities: aStreamOfVelocities 
+	
+	^self new initializeWithVelocities: aStreamOfVelocities ! !
+
+!testRun: #SensorSystemTest #test01 stamp: 'JP 11/20/2023 15:41:23'!
+ERROR!
+
+!classDefinition: #SensorSystem category: 'ISW1-AutomaticCar' stamp: 'JP 11/20/2023 15:41:28'!
+Object subclass: #SensorSystem
+	instanceVariableNames: 'streamOfVelocities'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-AutomaticCar'!
+!SensorSystem methodsFor: 'initialization' stamp: 'JP 11/20/2023 15:41:28'!
+initializeWithVelocities: aStreamOfVelocities 
+	self shouldBeImplemented.
+	streamOfVelocities := aStreamOfVelocities.! !
+!SensorSystem methodsFor: 'initialization' stamp: 'JP 11/20/2023 15:41:33' prior: 50333170!
+initializeWithVelocities: aStreamOfVelocities 
+	
+	streamOfVelocities := aStreamOfVelocities.! !
+
+!testRun: #SensorSystemTest #test01 stamp: 'JP 11/20/2023 15:41:34'!
+ERROR!
+!SensorSystem methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 15:41:40'!
+currentVelocity
+	self shouldBeImplemented.! !
+
+!classDefinition: #SensorSystem category: 'ISW1-AutomaticCar' stamp: 'JP 11/20/2023 15:42:00'!
+Object subclass: #SensorSystem
+	instanceVariableNames: 'streamOfVelocities currentVelocity'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'ISW1-AutomaticCar'!
+!SensorSystem methodsFor: 'as yet unclassified' stamp: 'JP 11/20/2023 15:41:59' prior: 50333185!
+currentVelocity
+	
+	^currentVelocity.! !
+
+!testRun: #SensorSystemTest #test01 stamp: 'JP 11/20/2023 15:42:02'!
+FAILURE!
+!SensorSystem methodsFor: 'initialization' stamp: 'JP 11/20/2023 15:42:44' prior: 50333177!
+initializeWithVelocities: aStreamOfVelocities 
+	
+	currentVelocity := 0 * kilometer/hour.
+	streamOfVelocities := aStreamOfVelocities.! !
+
+!testRun: #SensorSystemTest #test01 stamp: 'JP 11/20/2023 15:42:45'!
+PASSED!
+
+!testRun: #SensorSystemTest #test01 stamp: 'JP 11/20/2023 18:08:22'!
+PASSED!
+
+----SNAPSHOT----(23 November 2023 16:13:07) CuisUniversity-5981.image priorSource: 30733!
